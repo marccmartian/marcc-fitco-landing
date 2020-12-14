@@ -1,65 +1,61 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from "react";
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    return (
+        <>
+            <Head>
+                <title>Fitco | Software de gestión para gimnasios y plataforma de entrenamiento online</title>
+                <meta name="description" content="Fitco Software | sistema de gestión para centros fitness y gimnasios. Fitco Moves | plataforma de entrenamiento y bienestar online." />
+                <meta
+                    property='og:title'
+                    content='Fitco | Software de gestión para gimnasios y plataforma de entrenamiento online'
+                    key='og:title'
+                />
+                <meta
+                    property='og:image'
+                    content="https://fitcolatam.com/software/media/images/home/hero-benefits.png"
+                    key='og:image'
+                />
+                <meta
+                    property='og:description'
+                    content='Fitco Software | sistema de gestión para centros fitness y gimnasios. Fitco Moves | plataforma de entrenamiento y bienestar online.'
+                    key='og:description'
+                />
+                <meta property='og:type' content='website' key='og:type' />
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
+            <div className="home">
+                <div className="moves">
+                    <div className="container">
+                        <div className="logo">
+                            <img src="/img/moves.svg" alt="Fitco Moves"/>
+                        </div>
+                        <h1>
+                            <span className="highlighted">Entrena</span> desde<br/> cualquier lugar
+                        </h1>
+                        <span>Accede a +200 clases de los mejores centros fitness de Latam, mejora tu alimentación y cuida tu salud mental y emocional de nuestra mano.</span>
+                        <a href="https://fitcolatam.com/moves">
+                            <button>¡Empecemos a movernos!</button>
+                        </a>
+                    </div>
+                </div>
+                <div className="software">
+                    <div className="container">
+                        <div className="logo">
+                            <img src="/img/software.svg" alt="Fitco Software"/>
+                        </div>
+                        <h1>
+                            <span className="highlighted">Transforma</span> tu<br/> centro fitness
+                        </h1>
+                        <span>Ahorra tiempo administrando tu centro, posiciona tu marca y genera nuevos clientes e ingresos ¡Todo en un mismo lugar!</span>
+                        <a href="https://fitcolatam.com/software">
+                            <button>¡Conoce nuestro software!</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+    )
 }

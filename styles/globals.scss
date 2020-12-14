@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import "styles/mixins.scss";
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.layout {
+  .content {
+    height: calc(100vh - 98px);
+    min-height: 820px;
+    @include size('small') {
+      height: calc(100vh - 77px);
+    }
+    > div {
+      display: flex;
+      flex: 1;
+      height: 100%;
+    }
+  }
+}
+
+.footer {
+  padding: 0 36px;
+  box-sizing: border-box;
+  height: 98px;
+  background: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @include size('small') {
+    height: 77px;
+  }
+  .copyright {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #5F676D;
+  }
+}
+
+.home {
+  display: flex;
+  height: 100%;
+  flex: 1;
+  @include size('small') {
+    flex-direction: column;
+  }
+  .moves {
+    background: url("/img/moves-bg.png") no-repeat bottom left, linear-gradient(101.94deg, #28C49B 27.67%, #1DCD9F 89.82%);
+    background-size: contain;
+    .container {
+      right: 58px;
+      @include size('small') {
+        right: 20px;
+      }
+      .highlighted {
+        color: #28C49B;
+      }
+    }
+  }
+  .software {
+    background: url("/img/software-bg.png") no-repeat bottom right, #1D74D1;
+    .container {
+      left: 71px;
+      @include size('small') {
+        left: 20px;
+      }
+      .logo {
+        @include size('small') {
+          text-align: left !important;
+          height: 30px;
+          img {
+            height: 30px !important;
+            width: auto;
+          }
+        }
+      }
+      .highlighted {
+        color: #1D74D1;
+      }
+    }
+  }
+  .moves, .software {
+    flex: 1;
+    position: relative;
+    .container {
+      position: absolute;
+      width: 100%;
+      height: 450px;
+      top: calc(50% - 225px);
+      justify-content: center;
+      max-width: 390px;
+      display: flex;
+      flex-direction: column;
+      @include size('small') {
+        top: 20px;
+        max-width: 250px;
+        height: auto;
+      }
+      .logo {
+        height: 130px;
+        @include size('small') {
+          height: 25px;
+          text-align: right;
+        }
+        img {
+          @include size('small') {
+            height: 25px;
+            width: auto;
+          }
+        }
+      }
+      h1 {
+        margin: 86px 0 17px 0;
+        font-weight: bold;
+        font-size: 51px;
+        line-height: 64px;
+        color: #FFFFFF;
+        @include size('small') {
+          font-size: 29px;
+          line-height: 36px;
+          margin: 72px 0 12px 0;
+        }
+        .highlighted {
+          padding: 2px 10px;
+          background: white;
+        }
+      }
+      > span {
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        @include size('small') {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+      a {
+        margin-top: 32px;
+        outline: none;
+        text-decoration: none;
+        button {
+          cursor: pointer;
+          background: none;
+          width: 270px;
+          height: 50px;
+          border-radius: 33px;
+          outline: none;
+          border: 1.5px solid white;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 16px;
+          color: #FFFFFF;
+          @include size('small') {
+            width: 203px;
+            height: 46px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
