@@ -19,7 +19,7 @@ a {
 
 .layout {
   .content {
-    height: calc(100vh - 98px);
+    height: calc(100vh - 60px);
     min-height: 820px;
     @include size('small') {
       height: calc(100vh - 77px);
@@ -35,8 +35,8 @@ a {
 .footer {
   padding: 0 36px;
   box-sizing: border-box;
-  height: 98px;
-  background: white;
+  height: 60px;
+  background: #114360;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -47,7 +47,7 @@ a {
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    color: #5F676D;
+    color: white;
   }
 }
 
