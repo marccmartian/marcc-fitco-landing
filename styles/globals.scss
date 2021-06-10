@@ -171,13 +171,37 @@ a {
           margin: 0;
           font-size: 45px;
           color: #FFFFFF;
+          line-height: 44px;
           @include size('small') {
             font-size: 22px;
             line-height: 25px;
           }
+          .break-desktop{
+            @include size('small') {
+              display: none;
+            }
+          }
+          .break-mobile{
+            display: none;
+            @include size('small') {
+              display: inline;
+            }
+          }
+          .you-mobile{
+            display: none;
+            @include size('small') {
+              display: inline;
+              font-weight: normal;
+            }
+          }
+          .you-desktop{
+            @include size('small') {
+              display: none;
+            }
+          }
         }
         .title-normal{
-          font-weight: 600;
+          font-weight: normal;
           line-height: 44px;          
           @include size('small') {
             line-height: 25px;
@@ -201,6 +225,17 @@ a {
           @include size('small') {
             font-size: 13px;
             line-height: 16px;
+          }
+          .break-desktop{
+            @include size('small') {
+              display: none;
+            }
+          }
+          .break-mobile{
+            display: none;
+            @include size('small') {
+              display: inline;
+            }
           }
         }
         a {
