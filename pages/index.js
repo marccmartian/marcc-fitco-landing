@@ -38,7 +38,7 @@ export default function Home() {
                             <p className="moves-target">PARA EMPRESAS</p>
                             <h1 className="title-normal">Asegura el <br/> bienestar de tus</h1>
                             <div className="highlighted">
-                                <h1 className="title-bold">Colaboradores</h1>
+                                <h1 className="title-bold">colaboradores</h1>
                                 <div className="underline"></div>
                             </div>                            
                             <span className="text">Implementamos y gestionamos tu programa de <br/>bienestar corporativo.</span>
@@ -47,7 +47,9 @@ export default function Home() {
                             </a>                    
                         </div>                  
                     </div>
-                    <img className="desktop-img" src="/img/moves-desktop.png" alt="moves-tablet" />                    
+                    <div className="desktop-img">
+                        <img src="/img/moves-desktop.png" alt="moves-tablet" />
+                    </div>
                 </div>
 
                 <div className="software">
@@ -71,7 +73,9 @@ export default function Home() {
                             </a>
                         </div>
                     </div>
-                    <img className="desktop-img" src="/img/software-desktop.png" alt="moves-tablet" />
+                    <div className="desktop-img">
+                        <img src="/img/software-desktop.png" alt="moves-tablet" />
+                    </div>
                 </div>
             </div>
         </>

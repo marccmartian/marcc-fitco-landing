@@ -38,7 +38,7 @@ const linksCentros = [
     },
     {
         text: "Partners",
-        link: "https://fitcolatam.com/software/partners"
+        link: "https://fitcolatam.com/software/partners/"
     },
     {
         text: "Trabaja con nosotros",

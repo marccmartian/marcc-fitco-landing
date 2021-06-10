@@ -75,7 +75,9 @@
     color: white;
     height: 80px;
     line-height: 80px;
+    margin-top: 14px;
     @include size('small') {
+      margin-top: 0;
       border-top: none;
     }
   }
