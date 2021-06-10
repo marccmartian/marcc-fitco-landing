@@ -27,35 +27,53 @@ export default function Home() {
             </Head>
             <div className="home">
                 <div className="moves">
-                    <div className="container">
-                        <div className="logo">
-                            <img src="/img/moves.svg" alt="Fitco Moves"/>
-                        </div>
-                        <h1>
-                            <span className="highlighted">Entrena</span> desde<br/> cualquier lugar
-                        </h1>
-                        <span>Accede a +200 clases de los mejores centros fitness de Latam, mejora tu alimentación y cuida tu salud mental y emocional de nuestra mano.</span>
-                        <a href="https://fitcolatam.com/moves">
-                            <button>¡Empecemos a movernos!</button>
-                        </a>
+                    <div className="logo">
+                        <img src="/img/moves.svg" alt="Fitco Moves"/>
                     </div>
+                    <div className="container">
+                        <div className="mobile-img">
+                            <img src="/img/moves-mobile.png" alt="moves-tablet" />
+                        </div>
+                        <div className="info-wrapper">
+                            <p className="moves-target">PARA EMPRESAS</p>
+                            <h1 className="title-normal">Asegura el <br/> bienestar de tus</h1>
+                            <div className="highlighted">
+                                <h1 className="title-bold">Colaboradores</h1>
+                                <div className="underline"></div>
+                            </div>                            
+                            <span className="text">Implementamos y gestionamos tu programa de <br/>bienestar corporativo.</span>
+                            <a href="https://fitcolatam.com/moves">
+                                <button className="btn-moves">¡Lo quiero en mi empresa!</button>
+                            </a>                    
+                        </div>                  
+                    </div>
+                    <img className="desktop-img" src="/img/moves-desktop.png" alt="moves-tablet" />                    
                 </div>
+
                 <div className="software">
-                    <div className="container">
-                        <div className="logo">
-                            <img src="/img/software.svg" alt="Fitco Software"/>
-                        </div>
-                        <h1>
-                            <span className="highlighted">Transforma</span> tu<br/> centro fitness
-                        </h1>
-                        <span>Ahorra tiempo administrando tu centro, posiciona tu marca y genera nuevos clientes e ingresos ¡Todo en un mismo lugar!</span>
-                        <a href="https://fitcolatam.com/software">
-                            <button>¡Conoce nuestro software!</button>
-                        </a>
+                    <div className="logo">
+                        <img src="/img/software.svg" alt="Fitco Software"/>
                     </div>
+                    <div className="container">
+                        <div className="mobile-img">
+                            <img src="/img/software-mobile.png" alt="moves-tablet" />
+                        </div>
+                        <div className="info-wrapper">
+                            <p className="software-target">PARA CENTROS FITNESS Y ENTRENADORES</p>
+                            <div className="highlighted">
+                                <h1 className="title-bold">Transforma</h1>
+                                <div className="underline"></div>
+                            </div>
+                            <h1 className="title-normal">tu negocio fitness<br/>con nuestro software</h1>
+                            <span className="text">Haz crecer tu negocio y posiciona tu marca con un canal<br/>de ventas online, tu propia página web, una gestión<br/>sencilla y ¡mucho más!</span>
+                            <a href="https://fitcolatam.com/software">
+                                <button className="btn-software">¡Conoce nuestro software!</button>
+                            </a>
+                        </div>
+                    </div>
+                    <img className="desktop-img" src="/img/software-desktop.png" alt="moves-tablet" />
                 </div>
             </div>
         </>
-
     )
 }

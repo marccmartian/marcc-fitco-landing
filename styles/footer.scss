@@ -1,0 +1,82 @@
+.footer {
+  padding: 0 36px;
+  box-sizing: border-box;
+  background: #114360;
+  padding: 70px 140px 0;
+  @include size('medium') {
+    padding: 70px 30px 0;
+  }
+  @include size('small') {
+    padding: 70px 60px 0;
+  }
+
+  .footer-wrapper {
+    &__links{
+      display: flex;
+      justify-content: space-between;
+      @include size('small') {
+        flex-direction: column;
+      }
+      .logo {
+        @include size('small') {
+          order: 1;
+          padding-top: 24px;
+          margin-top: 64px;
+          border-top: 1px solid #fff;
+        }
+      }
+    }
+    h2 {
+      color: #fff;
+      margin: 0 0 12px;
+      font-size: 16px;
+      @include size('small') {
+        margin-top: 30px;
+      }
+    }
+    .space{
+      @include size('small') {
+        margin: 0;
+      }
+    }
+    ul {
+      color: #fff;
+      list-style: none;
+      padding: 0;
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .social-title{
+      margin: 0;
+    }    
+    .social-title, .social-email {
+      font-size: 15px;
+      color: #fff;
+      line-height: 24px;
+    }
+    .social-icons-wrap {
+      width: 100%;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      a, img {
+        display: block;
+      }
+      .fb-icon {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .copyright {
+    border-top: 1px solid #fff;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    height: 80px;
+    line-height: 80px;
+    @include size('small') {
+      border-top: none;
+    }
+  }
+}
